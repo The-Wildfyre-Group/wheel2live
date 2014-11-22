@@ -21,5 +21,11 @@ module Wheel2live
     # config.i18n.default_locale = :de
     config.assets.initialize_on_precompile = false
     config.exceptions_app = self.routes
+
+    # Add the fonts path
+    config.assets.paths << "#{Rails.root}/app/assets/fonts"
+
+    # Precompile additional assets
+    config.assets.precompile += %w( .svg .eot .woff .ttf )
   end
 end
