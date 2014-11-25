@@ -9,7 +9,7 @@
         <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
         <%= csrf_meta_tags %>
 
-        <%= google_webfonts_link_tag "Droid Sans", "Muli", "Oswald" %>
+        <%= google_webfonts_link_tag "Droid Sans", "Muli", "Oswald", "lato", "Droid Serif" %>
 
         <!-- Google Font Library -->
 
@@ -26,25 +26,62 @@
 	    <link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
 	    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
-        
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 
-    </head>
 
         <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/css/pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href="/css/theme-debbie.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+        <link href="/css/theme-hot.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/css/base.css" rel="stylesheet" type="text/css" media="all"/>
+        
+        <style type="text/css">
+            section {
+                padding: 72px 0px;
+                background: #fff;
+                border-top: 10px solid #ff7f33;
+            }
+
+            .btn-hollow {
+            /*background: rgba(0,0,0, .25);*/
+            border: 2px solid #fff;
+            color: #fff;
+            }
+
+            .countdown {
+                text-align: center;
+                margin-top: 72px;
+                font-family: 'Oswald';
+                text-transform: uppercase;
+                font-weight: 200;
+            }
+
+            .countdown-period {
+                font-size: 15px;
+            }
+
+            .countdown-amount {
+                font-size: 60px;
+                margin-bottom: 25px;
+            }
+
+            .countdown-section {
+                width: 15%;
+            }
+
+        </style>  
+
+    </head>
 
         <%= yield %>
 
-        <script src=".js/bootstrap.min.js"></script>
-        <script src=".js/skrollr.min.js"></script>
-        <script src=".js/spectragram.min.js"></script>
-        <script src=".js/flexslider.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/skrollr.min.js"></script>
+        <script src="/js/spectragram.min.js"></script>
+        <script src="/js/flexslider.min.js"></script>
         <script src="/js/jquery.plugin.min.js"></script>
         <script src="/js/jquery.countdown.min.js"></script>
         <script src="/js/lightbox.min.js"></script>
