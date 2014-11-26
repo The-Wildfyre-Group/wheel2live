@@ -10,19 +10,51 @@
         <link href="/css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/css/pe-icon-7-stroke.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="/css/theme-hot.css" rel="stylesheet" type="text/css" media="all"/>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+       
+         <style type="text/css">
+            section {
+                padding: 72px 0px;
+                background: #fff;
+                border-top: 10px solid #ff7f33;
+            }
+
+            .btn-hollow {
+            /*background: rgba(0,0,0, .25);*/
+            border: 2px solid #fff;
+            color: #fff;
+            }
+
+            .countdown {
+                text-align: center;
+                margin-top: 72px;
+                font-family: 'Oswald';
+                text-transform: uppercase;
+                font-weight: 200;
+            }
+
+            .countdown-period {
+                font-size: 15px;
+            }
+
+            .countdown-amount {
+                font-size: 60px;
+                margin-bottom: 10px;
+            }
+
+            .countdown-section {
+                width: 15%;
+            }
+
+            ul.disc {list-style: disc; padding-left: 16px;}
+            ul.disc li {font-size: 12px; font-weight: 600; word-spacing: -1px; line-height: 16px; margin: 6px 0;}
+
+        </style>  
+
+
     </head>
     <body>
     
-    	<div class="loader">
-    		<div class="strip-holder">
-				<div class="strip-1"></div>
-				<div class="strip-2"></div>
-				<div class="strip-3"></div>
-    		</div>
-    	</div>
-    	
-    	<a id="top"></a>
+    <a id="top"></a>
 				
 		<div class="nav-container">
 						
@@ -109,7 +141,7 @@
 			<!-- Header -->
 			<section class="image-with-text background-dark preserve-3d">
 				<div class="background-image-holder">
-					<img class="background-image" alt="About Image" src="assets/gdrive/holding_fire.jpg">
+					<%= image_tag("gdrive/holding_fire.jpg", class: "background-image") %>
 					<div class="container vertical-align" style="z-index: 2; top: 60%;">
 						<div class="row">
 							<div class="col-md-5 col-sm-7">
@@ -150,15 +182,16 @@
 								<p class="question gf_oswald light fs_26 ws-1">
 									THE JOURNEY
 								</p>
-								<p class="gf_muli lh_20">
+								<p class="gf_muli lh_22 pt10">
 									Musician and disability advocate Frank Barham will embark on a 302-mile journey from Atlanta to Savannah.
 								</p>
+								<br/>
 								
-								<ul class="gf_muli">
+								<ul class="gf_muli disc">
 									<li>Multi-stage Campaign for Advocacy</li>
 									<li>302-mile Wheel Chair Ride</li>
 									<li>CD Release & Musical Tour</li>
-									<li>Celebration of ADA's 25th Anniversary</li>
+									<li>ADA's 25th Anniversary</li>
 									<li>An Inspiring Pesonal Journey</li>
 									<li>Embracing Possibilities</li>
 								</ul>
@@ -181,16 +214,17 @@
 									THE CAUSE
 								</p>
 								
-								<p class="gf_muli lh_20">
+								<p class="gf_muli lh_22 pt10">
 									The purpose of this project is to provide wheelchairs to persons with disabilities in underserved communities.
 								</p>
+								<br/>
 
-								<ul class="gf_muli">
+								<ul class="gf_muli disc">
 									<li>Wheelchair Donations</li>
 									<li>Living Assistance for the Disabled</li>
 									<li>Increased Public Awareness</li>
 									<li>Community and Civic Engagment</li>
-									<li>Redefining Attitudes and Pushing Limits</li>
+									<li>Redefining Attitudes</li>
 									<li>Collective Action for Social Good</li>
 								</ul>
 								<hr/>
@@ -209,11 +243,12 @@
 									THE MISSION
 								</p>
 							
-								<p class="gf_muli lh_20">
+								<p class="gf_muli lh_22 pt10">
 									 Increasing awareness of the disability rights movement by presenting multi-disciplinary advocacy tours. 
 								</p>
+								<br/>
 
-								<ul class="gf_muli">
+								<ul class="gf_muli disc">
 									<li>Establishing Advocacy Tours</li>
 									<li>Public Awareness Campaigns</li>
 									<li>Social Justice for the Disabled</li>
@@ -238,12 +273,13 @@
 									THE DREAM
 								</p>
 							
-								<p class="gf_muli lh_20">
+								<p class="gf_muli lh_22 pt10">
 									A life dedicated to reimagining the abilities and innovative
 									solutions for persons living with disabilities. 
 								</p>
+								<br/>
 
-								<ul class="gf_muli">
+								<ul class="gf_muli disc">
 									<li>Social Innovation</li>
 									<li>Corporate Linkages</li>
 									<li>Technological Advancements</li>
@@ -286,7 +322,7 @@
 				
 				<div class="go-right side-image col-sm-4 col-md-6">
 					<div class="background-image-holder">
-						<img class="background-image" alt="About Image" src="assets/gdrive/holding_fire.jpg">
+						<%= image_tag("gdrive/holding_fire.jpg", class: "background-image") %>
 					</div>
 				</div>
 			</section>
@@ -613,7 +649,7 @@
 
 			<section class="subscribe-1">
 				<div class="background-image-holder parallax-background">
-					<img class="background-image" alt="Background Image" src="assets/gdrive/DSC_0123.jpg">
+					<%= image_tag("gdrive/DSC_0123.jpg", class: "background-image") %>
 				</div>
 			
 				<div class="container">
@@ -648,7 +684,6 @@
 							<div class="twitter-feed">
 								<i class="icon social_twitter text-white"></i>
 								<div class="tweets-feed" data-widget-id="492085717044981760">
-						
 								</div>
 								<span class="text-white">Follow <a href="#">@wheeltolive</a> for more updates</span>
 							</div>
@@ -679,10 +714,10 @@
 			</section>
 
 			<div class="footer-container"></div>
+
 		</div>
 		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
-        <script src="/js/bootstrap.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
         <script src="/js/skrollr.min.js"></script>
         <script src="/js/spectragram.min.js"></script>
         <script src="/js/flexslider.min.js"></script>
